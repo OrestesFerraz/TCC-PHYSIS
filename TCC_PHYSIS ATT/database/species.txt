@@ -1,0 +1,59 @@
+-- 1. Espécie para Espada-de-São-Jorge
+INSERT INTO especies (nome, descricao) VALUES (
+    'Sansevieria trifasciata',
+    'Espécie de planta herbácea pertencente à família Asparagaceae. Conhecida por sua resistência e capacidade de purificar o ar, removendo toxinas como formaldeído e benzeno.'
+);
+
+-- 2. Espécie para Suculenta Echeveria
+INSERT INTO especies (nome, descricao) VALUES (
+    'Echeveria elegans',
+    'Gênero de plantas suculentas da família Crassulaceae, nativas do México. Caracterizam-se por suas rosetas compactas e folhas carnudas em tons de verde, azul e rosa.'
+);
+
+-- 3. Espécie para Lírio-da-Paz
+INSERT INTO especies (nome, descricao) VALUES (
+    'Spathiphyllum wallisii',
+    'Planta herbácea da família Araceae, conhecida por suas folhas brilhantes e espigas florais brancas. Excelente para purificação do ar em ambientes internos.'
+);
+
+-- 4. Espécie para Costela-de-Adão
+INSERT INTO especies (nome, descricao) VALUES (
+    'Monstera deliciosa',
+    'Planta trepadeira da família Araceae, famosa por suas folhas grandes e fenestradas (com furos naturais). Nativa das florestas tropicais da América Central.'
+);
+
+-- 5. Espécie para Jiboia
+INSERT INTO especies (nome, descricao) VALUES (
+    'Epipremnum pinnatum',
+    'Trepadeira da família Araceae, muito popular como planta ornamental. Conhecida por sua facilidade de cultivo e folhas variegadas em verde e amarelo.'
+);
+
+-- 6. Espécie para Rosa do Deserto
+INSERT INTO especies (nome, descricao) VALUES (
+    'Adenium obesum',
+    'Planta suculenta da família Apocynaceae, caracterizada por seu caule engrossado (caudex) e flores vibrantes. Nativa de regiões áridas da África e Oriente Médio.'
+);
+
+-- 7. Espécie para Samambaia
+INSERT INTO especies (nome, descricao) VALUES (
+    'Nephrolepis exaltata',
+    'Samambaia da família Lomariopsidaceae, muito popular como planta ornamental. Desenvolve frondes longas e arqueadas, ideais para vasos suspensos.'
+);
+
+-- 8. Espécie para Cacto Mandacaru
+INSERT INTO especies (nome, descricao) VALUES (
+    'Cereus jamacaru',
+    'Cacto colunar nativo do Brasil, da família Cactaceae. Pode atingir até 6 metros de altura e produz flores brancas noturnas e frutos comestíveis.'
+);
+
+-- 9. Espécie para Orquídea Phalaenopsis
+INSERT INTO especies (nome, descricao) VALUES (
+    'Phalaenopsis amabilis',
+    'Gênero de orquídeas da família Orchidaceae, conhecidas como "orquídeas borboleta". Nativas do Sudeste Asiático, são epífitas e possuem flores duráveis.'
+);
+
+-- 10. Espécie para Manjericão
+INSERT INTO especies (nome, descricao) VALUES (
+    'Ocimum basilicum',
+    'Erva aromática anual da família Lamiaceae, nativa do sul da Ásia. Amplamente utilizada na culinária mediterrânea e na medicina tradicional.'
+);

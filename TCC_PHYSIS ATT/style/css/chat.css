@@ -1,0 +1,40 @@
+/* Animações para o chat */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar personalizada */
+#mensagensContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+#mensagensContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#mensagensContainer::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+#mensagensContainer::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+.dark #mensagensContainer::-webkit-scrollbar-track {
+    background: #374151;
+}
+
+.dark #mensagensContainer::-webkit-scrollbar-thumb {
+    background: #6b7280;
+}
+
+.dark #mensagensContainer::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}

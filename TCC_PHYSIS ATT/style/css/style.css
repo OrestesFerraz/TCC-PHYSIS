@@ -1,0 +1,417 @@
+:root {
+    --verde-primario: #166534;
+    --verde-secundario: #16a34a;
+    --verde-claro: #22c55e;
+    --verde-muito-claro: #bbf7d0;
+    --marrom: #8b7355;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fbf8;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Animações para Dropdown e Menu Mobile */
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.dropdown-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Animação do Menu Mobile */
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+#mobile-menu:not(.hidden) {
+    max-height: 600px;
+    opacity: 1;
+}
+
+/* Animação dos itens do menu mobile */
+#mobile-menu a {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#mobile-menu:not(.hidden) a {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Delays escalonados para efeito cascata */
+#mobile-menu:not(.hidden) a:nth-child(1) { transition-delay: 0.05s; }
+#mobile-menu:not(.hidden) a:nth-child(2) { transition-delay: 0.1s; }
+#mobile-menu:not(.hidden) a:nth-child(3) { transition-delay: 0.15s; }
+#mobile-menu:not(.hidden) a:nth-child(4) { transition-delay: 0.2s; }
+#mobile-menu:not(.hidden) a:nth-child(5) { transition-delay: 0.25s; }
+
+/* Rotação suave da seta do dropdown */
+#userMenuButton svg {
+    transition: transform 0.3s ease;
+}
+
+#userMenuButton.active svg {
+    transform: rotate(180deg);
+}
+
+.leaf {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.leaf-1 {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20640%22%3E%3C!--!Font%20Awesome%20Free%20v7.1.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22%23b7f0bb%22%20d%3D%22M535.3%2070.7C541.7%2064.6%20551%2062.4%20559.6%2065.2C569.4%2068.5%20576%2077.7%20576%2088L576%20274.9C576%20406.1%20467.9%20512%20337.2%20512C260.2%20512%20193.8%20462.5%20169.7%20393.3C134.3%20424.1%20112%20469.4%20112%20520C112%20533.3%20101.3%20544%2088%20544C74.7%20544%2064%20533.3%2064%20520C64%20445.1%20102.2%20379.1%20160.1%20340.3C195.4%20316.7%20237.5%20304%20280%20304L360%20304C373.3%20304%20384%20293.3%20384%20280C384%20266.7%20373.3%20256%20360%20256L280%20256C240.3%20256%20202.7%20264.8%20169%20280.5C192.3%20210.5%20258.2%20160%20336%20160C402.4%20160%20451.8%20137.9%20484.7%20116C503.9%20103.2%20520.2%2087.9%20535.4%2070.7z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.leaf-2 {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20640%22%3E%3C!--!Font%20Awesome%20Free%20v7.1.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22%23b7f0bb%22%20d%3D%22M535.3%2070.7C541.7%2064.6%20551%2062.4%20559.6%2065.2C569.4%2068.5%20576%2077.7%20576%2088L576%20274.9C576%20406.1%20467.9%20512%20337.2%20512C260.2%20512%20193.8%20462.5%20169.7%20393.3C134.3%20424.1%20112%20469.4%20112%20520C112%20533.3%20101.3%20544%2088%20544C74.7%20544%2064%20533.3%2064%20520C64%20445.1%20102.2%20379.1%20160.1%20340.3C195.4%20316.7%20237.5%20304%20280%20304L360%20304C373.3%20304%20384%20293.3%20384%20280C384%20266.7%20373.3%20256%20360%20256L280%20256C240.3%20256%20202.7%20264.8%20169%20280.5C192.3%20210.5%20258.2%20160%20336%20160C402.4%20160%20451.8%20137.9%20484.7%20116C503.9%20103.2%20520.2%2087.9%20535.4%2070.7z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.leaf-3 {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20640%22%3E%3C!--!Font%20Awesome%20Free%20v7.1.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22%23b7f0bb%22%20d%3D%22M535.3%2070.7C541.7%2064.6%20551%2062.4%20559.6%2065.2C569.4%2068.5%20576%2077.7%20576%2088L576%20274.9C576%20406.1%20467.9%20512%20337.2%20512C260.2%20512%20193.8%20462.5%20169.7%20393.3C134.3%20424.1%20112%20469.4%20112%20520C112%20533.3%20101.3%20544%2088%20544C74.7%20544%2064%20533.3%2064%20520C64%20445.1%20102.2%20379.1%20160.1%20340.3C195.4%20316.7%20237.5%20304%20280%20304L360%20304C373.3%20304%20384%20293.3%20384%20280C384%20266.7%20373.3%20256%20360%20256L280%20256C240.3%20256%20202.7%20264.8%20169%20280.5C192.3%20210.5%20258.2%20160%20336%20160C402.4%20160%20451.8%20137.9%20484.7%20116C503.9%20103.2%20520.2%2087.9%20535.4%2070.7z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.leaf-4 {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20640%22%3E%3C!--!Font%20Awesome%20Free%20v7.1.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22%23b7f0bb%22%20d%3D%22M535.3%2070.7C541.7%2064.6%20551%2062.4%20559.6%2065.2C569.4%2068.5%20576%2077.7%20576%2088L576%20274.9C576%20406.1%20467.9%20512%20337.2%20512C260.2%20512%20193.8%20462.5%20169.7%20393.3C134.3%20424.1%20112%20469.4%20112%20520C112%20533.3%20101.3%20544%2088%20544C74.7%20544%2064%20533.3%2064%20520C64%20445.1%20102.2%20379.1%20160.1%20340.3C195.4%20316.7%20237.5%20304%20280%20304L360%20304C373.3%20304%20384%20293.3%20384%20280C384%20266.7%20373.3%20256%20360%20256L280%20256C240.3%20256%20202.7%20264.8%20169%20280.5C192.3%20210.5%20258.2%20160%20336%20160C402.4%20160%20451.8%20137.9%20484.7%20116C503.9%20103.2%20520.2%2087.9%20535.4%2070.7z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.leaf-5 {
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20640%22%3E%3C!--!Font%20Awesome%20Free%20v7.1.0%20by%20%40fontawesome%20-%20https%3A%2F%2Ffontawesome.com%20License%20-%20https%3A%2F%2Ffontawesome.com%2Flicense%2Ffree%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20fill%3D%22%23b7f0bb%22%20d%3D%22M535.3%2070.7C541.7%2064.6%20551%2062.4%20559.6%2065.2C569.4%2068.5%20576%2077.7%20576%2088L576%20274.9C576%20406.1%20467.9%20512%20337.2%20512C260.2%20512%20193.8%20462.5%20169.7%20393.3C134.3%20424.1%20112%20469.4%20112%20520C112%20533.3%20101.3%20544%2088%20544C74.7%20544%2064%20533.3%2064%20520C64%20445.1%20102.2%20379.1%20160.1%20340.3C195.4%20316.7%20237.5%20304%20280%20304L360%20304C373.3%20304%20384%20293.3%20384%20280C384%20266.7%20373.3%20256%20360%20256L280%20256C240.3%20256%20202.7%20264.8%20169%20280.5C192.3%20210.5%20258.2%20160%20336%20160C402.4%20160%20451.8%20137.9%20484.7%20116C503.9%20103.2%20520.2%2087.9%20535.4%2070.7z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+.floating {
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-slow {
+    animation: float 10s ease-in-out infinite;
+}
+
+.floating-fast {
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-reverse {
+    animation: float 8s ease-in-out infinite reverse;
+}
+
+.plant-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--verde-primario);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-plant {
+    background: linear-gradient(to right, var(--verde-primario), var(--verde-secundario));
+    transition: all 0.3s ease;
+}
+
+.btn-plant:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(22, 101, 52, 0.2);
+}
+
+.custom-shape {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay escalonado para cards */
+.fade-in:nth-child(1) { transition-delay: 0.1s; }
+.fade-in:nth-child(2) { transition-delay: 0.2s; }
+.fade-in:nth-child(3) { transition-delay: 0.3s; }
+
+.stat-pattern {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M20,50 Q30,30 40,50 T60,50 T80,50" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none"/><path d="M20,60 Q30,40 40,60 T60,60 T80,60" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none"/><path d="M20,70 Q30,50 40,70 T60,70 T80,70" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none"/></svg>');
+    background-size: 100px;
+    opacity: 0.3;
+}
+
+/* Navbar */
+.navbar-rounded {
+    border-radius: 20px;
+    margin: 20px auto 0 auto;
+    width: calc(100% - 40px);
+    max-width: 1400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.plant-section {
+    padding: 2rem 0;
+}
+
+.hero-plants {
+    background: linear-gradient(135deg, var(--verde-primario), var(--verde-secundario));
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    max-width: 1400px;
+}
+
+.hero-plants h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.search-container {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--verde-primario), var(--verde-secundario));
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plant-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.plant-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.plant-card-content {
+    padding: 1.5rem;
+}
+
+.filter-sidebar {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.btn-plant {
+    background: linear-gradient(to right, var(--verde-primario), var(--verde-secundario));
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-plant:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(22, 101, 52, 0.3);
+}
+
+.difficulty-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.difficulty-easy { background: #dcfce7; color: #166534; }
+.difficulty-medium { background: #fef9c3; color: #854d0e; }
+.difficulty-hard { background: #fee2e2; color: #991b1b; }
+
+
+@media (max-width: 768px) {
+    .navbar-rounded {
+        margin: 15px auto 0 auto;
+        width: calc(100% - 30px);
+        border-radius: 16px;
+    }
+
+    .leaf {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.faq-item {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer.open {
+    max-height: 500px;
+}
+
+/* CORREÇÃO: Remover a classe .faq-icon.rotate e usar transform diretamente no JS */
+.faq-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateX(-100%); 
+    }
+    to { 
+        transform: translateX(0); 
+    }
+}
+
+/* Loading Spinner */
+.spinner {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #16a34a;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom utility classes */
+.error-message {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
