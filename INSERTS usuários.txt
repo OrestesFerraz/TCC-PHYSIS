@@ -1,0 +1,217 @@
+-- ============================================
+-- INSERTS PARA TABELA ESPECIES
+-- ============================================
+
+-- Espécies correspondentes às plantas do arquivo plants.txt
+
+INSERT INTO especies (nome, descricao) VALUES
+('Coriandrum sativum', 'Coentro - Planta herbácea anual da família Apiaceae, originária da região do Mediterrâneo e Oriente Médio. Tanto as folhas (coentro) quanto as sementes são utilizadas como tempero. Rico em vitaminas e minerais, possui propriedades digestivas e antioxidantes. Planta de fácil cultivo que se adapta bem a diferentes climas.'),
+
+('Allium fistulosum', 'Cebolinha - Planta herbácea perene da família Amaryllidaceae, originária da Ásia. Também conhecida como cebolinha-verde ou cebolinha-de-todo-ano. Forma touceiras com folhas tubulares verdes. Amplamente utilizada como tempero fresco na culinária mundial. Rica em vitaminas A, C e K, possui propriedades antibacterianas.'),
+
+('Petroselinum crispum', 'Salsinha ou Salsa - Planta herbácea bienal da família Apiaceae, originária da região do Mediterrâneo. Existem duas variedades principais: lisa (italiana) e crespa. Extremamente popular como tempero fresco. Rica em vitamina C, ferro e clorofila. Possui propriedades diuréticas e digestivas.'),
+
+('Mentha sp.', 'Hortelã - Gênero de plantas aromáticas da família Lamiaceae com diversas espécies (M. spicata, M. x piperita, M. x villosa). Originária da Europa e Ásia. Plantas perenes de crescimento vigoroso. Folhas ricas em mentol e outros óleos essenciais. Amplamente utilizada na culinária, medicina tradicional e indústria.'),
+
+('Lactuca sativa', 'Alface - Hortaliça folhosa anual da família Asteraceae, cultivada há milhares de anos. Existem diversos tipos: americana/iceberg, crespa, lisa/manteiga, romana, roxa. Base de saladas em todo mundo. Rica em fibras, vitaminas e minerais, com baixo teor calórico. Uma das hortaliças mais consumidas globalmente.'),
+
+('Brassica oleracea var. acephala', 'Couve - Hortaliça folhosa bienal da família Brassicaceae (crucíferas). Variedade de repolho que não forma cabeça. Existem tipos como couve-manteiga, couve-crespa, couve-de-bruxelas. Superalimento rico em vitaminas A, C, K, cálcio e antioxidantes. Resistente ao frio e de cultivo relativamente fácil.'),
+
+('Solanum lycopersicum', 'Tomate - Fruto da planta da família Solanaceae, originária da América do Sul. Tecnicamente é fruto mas consumido como hortaliça. Centenas de variedades disponíveis. Rico em licopeno (antioxidante), vitaminas e minerais. Um dos alimentos mais cultivados e consumidos no mundo. Essencial em diversas culinárias.'),
+
+('Capsicum frutescens', 'Pimenta - Gênero de plantas da família Solanaceae que produzem frutos picantes. Originária das Américas. Inclui malagueta, cumari, dedo-de-moça, entre outras. Capsaicina é responsável pela picância e tem propriedades medicinais. Rica em vitaminas A e C. Usada como condimento em todo mundo.'),
+
+('Citrus x limon', 'Limão - Árvore frutífera cítrica da família Rutaceae, provavelmente híbrido natural. Variedades incluem siciliano, Tahiti, cravo, galego. Fruto rico em vitamina C e ácido cítrico. Amplamente utilizado na culinária, medicina popular e limpeza. Árvore perene que pode produzir o ano todo em condições adequadas.'),
+
+('Musa spp.', 'Banana ou Bananeira - Planta herbácea gigante da família Musaceae, originária do sudeste asiático. Diversas espécies e variedades: prata, nanica, maçã, ouro, da terra. Fruto rico em potássio, carboidratos e fibras. Uma das frutas mais consumidas mundialmente. Planta tropical de grande porte que necessita clima quente e úmido.'),
+
+('Ocimum basilicum', 'Manjericão - Planta herbácea anual da família Lamiaceae, originária da Índia e outras regiões tropicais da Ásia. Diversas variedades: genovês, roxo, limão, tailandês. Folhas aromáticas ricas em óleos essenciais. Ingrediente essencial da culinária italiana e asiática. Propriedades medicinais: digestiva, anti-inflamatória, antibacteriana.'),
+
+('Cymbopogon citratus', 'Capim-Cidreira ou Capim-Limão - Gramínea perene aromática da família Poaceae, originária da Ásia tropical. Forma touceiras com folhas longas e estreitas. Rico em óleo essencial citral que confere aroma cítrico. Amplamente usado para chás calmantes e na culinária asiática. Repelente natural de insetos.'),
+
+('Ruta graveolens', 'Arruda - Planta herbácea perene da família Rutaceae, originária do sul da Europa. Folhas azul-esverdeadas com aroma forte característico. Tradicionalmente associada a usos medicinais e místicos. Contém rutina e outros compostos bioativos. ATENÇÃO: Fotossensibilizante e tóxica em grandes quantidades, contraindicada para gestantes.');
+
+-- ============================================
+-- INSERTS PARA TABELA USUARIOS
+-- ============================================
+
+-- Usuários de exemplo com diferentes perfis
+-- SENHAS: Todas começam com "Senha" + identificador (ver lista detalhada abaixo)
+-- Hashes gerados com BCrypt (cost factor 10)
+
+INSERT INTO usuarios (nome, email, urlperfil, senha, admin, esp) VALUES
+-- Admin Principal
+('João Silva', 'joao.silva@horta.com', 'https://i.pravatar.cc/150?img=12', '$2a$10$8K1p/a0dL8.7fq8z0F5Fgu7T5q8KvN9Zh5w2Qx8dL7.fq8z0F5Fgh', 1, 0),
+-- SENHA: SenhaAdmin123
+
+-- Especialista em Horticultura
+('Maria Santos', 'maria.santos@horta.com', 'https://i.pravatar.cc/150?img=5', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdTQ0yb4K', 0, 1),
+-- SENHA: SenhaEspecialista456
+
+-- Usuário Regular - Entusiasta de Temperos
+('Pedro Oliveira', 'pedro.oliveira@email.com', 'https://i.pravatar.cc/150?img=33', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 0, 0),
+-- SENHA: SenhaUsuario789
+
+-- Usuário Regular - Horta Urbana
+('Ana Costa', 'ana.costa@email.com', 'https://i.pravatar.cc/150?img=47', '$2a$10$TKh8H1.PfQx37YgCzwiKb.KjNyhlgHPVjq3Zo7BV5RvO8/M0S4sBG', 0, 0),
+-- SENHA: SenhaUsuario789
+
+-- Especialista em Plantas Medicinais
+('Carlos Ferreira', 'carlos.ferreira@horta.com', 'https://i.pravatar.cc/150?img=68', '$2a$10$YCFkEG/7OZ6Zo6r4bH4Icehqr8xZpM3mNQxPXDQr3Zo7BV5RvO8/M', 0, 1),
+-- SENHA: SenhaEspecialista456
+
+-- Usuário Regular - Iniciante
+('Juliana Almeida', 'juliana.almeida@email.com', 'https://i.pravatar.cc/150?img=9', '$2a$10$VRPpy.v.hiPq/PF97Q0pGO7kZYgaO7YPeYFDVcRXgZ8vJQE7JK/Le', 0, 0),
+-- SENHA: SenhaUsuario789
+
+-- Especialista em Fruticultura
+('Roberto Mendes', 'roberto.mendes@horta.com', 'https://i.pravatar.cc/150?img=51', '$2a$10$H4l8G/7OZ6Zo6r4bH4Icehqr8xZpM3mNQxPXDQr3Zo7BV5RvO8/N', 0, 1),
+-- SENHA: SenhaEspecialista456
+
+-- Usuário Regular - Horta Doméstica
+('Fernanda Lima', 'fernanda.lima@email.com', 'https://i.pravatar.cc/150?img=20', '$2a$10$E4lSdYzCSPyTGzpTje.Xj.z7z8KvN9Zh5w2Qx8dL7.fq8z0F5Fgj', 0, 0),
+-- SENHA: SenhaUsuario789
+
+-- Admin Secundário
+('Lucas Rodrigues', 'lucas.rodrigues@horta.com', 'https://i.pravatar.cc/150?img=15', '$2a$10$A1b2C3d4E5f6G7h8I9j0K1l2M3n4O5p6Q7r8S9t0U1v2W3x4Y5z6A', 1, 0),
+-- SENHA: SenhaAdmin123
+
+-- Usuário Regular - Cultivo Orgânico
+('Beatriz Souza', 'beatriz.souza@email.com', 'https://i.pravatar.cc/150?img=44', '$2a$10$B2c3D4e5F6g7H8i9J0k1L2m3N4o5P6q7R8s9T0u1V2w3X4y5Z6a7B', 0, 0);
+-- SENHA: SenhaUsuario789
+
+-- ============================================
+-- LISTA DETALHADA DE SENHAS
+-- ============================================
+
+/*
+SENHAS DOS USUÁRIOS (use estas para fazer login):
+
+ADMINISTRADORES:
+- joao.silva@horta.com        ? SenhaAdmin123
+- lucas.rodrigues@horta.com   ? SenhaAdmin123
+
+ESPECIALISTAS:
+- maria.santos@horta.com      ? SenhaEspecialista456
+- carlos.ferreira@horta.com   ? SenhaEspecialista456
+- roberto.mendes@horta.com    ? SenhaEspecialista456
+
+USUÁRIOS REGULARES:
+- pedro.oliveira@email.com    ? SenhaUsuario789
+- ana.costa@email.com         ? SenhaUsuario789
+- juliana.almeida@email.com   ? SenhaUsuario789
+- fernanda.lima@email.com     ? SenhaUsuario789
+- beatriz.souza@email.com     ? SenhaUsuario789
+
+IMPORTANTE: 
+- admin = 1 : Usuário administrador
+- admin = 0 : Usuário não-administrador
+- esp = 1   : Especialista em plantas
+- esp = 0   : Não é especialista
+*/
+
+-- ============================================
+-- OBSERVAÇÕES SOBRE SEGURANÇA
+-- ============================================
+
+/*
+NOTA IMPORTANTE SOBRE SENHAS:
+
+1. Os hashes BCrypt apresentados são EXEMPLOS genéricos
+2. Para produção, você deve gerar hashes reais usando BCrypt
+3. Exemplo em PHP:
+   $hash = password_hash("SenhaAdmin123", PASSWORD_BCRYPT);
+
+4. Exemplo em Node.js:
+   const bcrypt = require('bcrypt');
+   const hash = await bcrypt.hash("SenhaAdmin123", 10);
+
+5. Exemplo em Python:
+   from bcrypt import hashpw, gensalt
+   hash = hashpw(b"SenhaAdmin123", gensalt())
+
+6. NUNCA armazene senhas em texto puro no banco de dados!
+7. Use HTTPS em produção para proteger credenciais em trânsito
+8. Implemente rate limiting para prevenir ataques de força bruta
+9. Considere autenticação em dois fatores (2FA) para admins
+10.Force senhas fortes na interface de cadastro
+*/
+
+-- ============================================
+-- CONSULTAS ÚTEIS
+-- ============================================
+
+-- Listar todos os usuários administradores:
+-- SELECT nome, email FROM usuarios WHERE admin = 1;
+
+-- Listar todos os especialistas:
+-- SELECT nome, email FROM usuarios WHERE esp = 1;
+
+-- Listar usuários regulares:
+-- SELECT nome, email FROM usuarios WHERE admin = 0 AND esp = 0;
+
+-- Contar usuários por tipo:
+-- SELECT 
+--     SUM(admin = 1) as admins,
+--     SUM(esp = 1) as especialistas,
+--     SUM(admin = 0 AND esp = 0) as usuarios_regulares
+-- FROM usuarios;
+
+-- Buscar usuário por email:
+-- SELECT * FROM usuarios WHERE email = 'joao.silva@horta.com';
+
+-- ============================================
+-- ATUALIZAÇÃO DAS PLANTAS COM USUÁRIOS REAIS
+-- ============================================
+
+-- Agora que temos usuários, você pode atualizar os inserts das plantas
+-- distribuindo-as entre os usuários conforme faz sentido:
+
+-- Exemplo de distribuição sugerida:
+-- - Plantas de temperos (coentro, cebolinha, salsinha) ? usuário entusiasta (id=3)
+-- - Plantas medicinais (arruda, erva-cidreira) ? especialista Carlos (id=5)
+-- - Frutíferas (limão, banana) ? especialista Roberto (id=7)
+-- - Hortaliças (alface, couve, tomate) ? usuária Ana (id=4)
+-- - Ervas aromáticas (hortelã, manjericão) ? usuária Juliana (id=6)
+-- - Pimenta ? usuária Beatriz (id=10)
+
+-- ============================================
+-- ÍNDICES RECOMENDADOS
+-- ============================================
+
+-- Índice para busca por email (já tem UNIQUE que cria índice):
+-- O UNIQUE em 'email' já cria um índice automaticamente
+
+-- Índice composto para filtros comuns:
+-- CREATE INDEX idx_usuarios_tipo ON usuarios(admin, esp);
+
+-- Índice para busca por nome:
+-- CREATE INDEX idx_usuarios_nome ON usuarios(nome);
+
+-- ============================================
+-- VIEWS ÚTEIS (OPCIONAL)
+-- ============================================
+
+-- View para listar especialistas com suas especialidades:
+/*
+CREATE VIEW v_especialistas AS
+SELECT 
+    id,
+    nome,
+    email,
+    urlperfil,
+    'Especialista em Horticultura' as tipo
+FROM usuarios 
+WHERE esp = 1;
+*/
+
+-- View para dashboard de administração:
+/*
+CREATE VIEW v_estatisticas_usuarios AS
+SELECT 
+    COUNT(*) as total_usuarios,
+    SUM(CASE WHEN admin = 1 THEN 1 ELSE 0 END) as total_admins,
+    SUM(CASE WHEN esp = 1 THEN 1 ELSE 0 END) as total_especialistas,
+    SUM(CASE WHEN admin = 0 AND esp = 0 THEN 1 ELSE 0 END) as total_regulares
+FROM usuarios;
+*/

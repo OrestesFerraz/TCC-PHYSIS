@@ -1,0 +1,394 @@
+-- ============================================
+-- INSERTS DETALHADOS PARA TABELA PLANTAS
+-- Baseado em pesquisas de tutoriais completos
+-- ============================================
+
+-- DISTRIBUIÇÃO DAS PLANTAS ENTRE OS USUÁRIOS:
+-- ID 3 - Pedro Oliveira (Entusiasta de Temperos): Coentro, Cebolinha, Salsinha
+-- ID 4 - Ana Costa (Horta Urbana): Alface, Couve, Tomate
+-- ID 5 - Carlos Ferreira (Especialista Plantas Medicinais): Arruda, Erva-Cidreira
+-- ID 6 - Juliana Almeida (Iniciante): Hortelã, Manjericão
+-- ID 7 - Roberto Mendes (Especialista Fruticultura): Limão, Banana
+-- ID 10 - Beatriz Souza (Cultivo Orgânico): Pimenta
+
+-- ============================================
+-- 1. COENTRO (Coriandrum sativum)
+-- Usuário: Pedro Oliveira (Entusiasta de Temperos)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Coentro',
+    'https://images.unsplash.com/photo-1592607128092-a1976d4b5ca7?w=400',
+    'O coentro é uma planta aromática muito apreciada na culinária brasileira e internacional. Rico em vitaminas A, C e K, além de minerais como ferro, cálcio e magnésio. Possui propriedades antioxidantes, anti-inflamatórias e antimicrobianas. É utilizado tradicionalmente para auxiliar na digestão, aliviar gases e cólicas estomacais. As folhas frescas têm aroma refrescante e sabor marcante, sendo indispensável em diversos pratos como saladas, sopas, molhos e temperos. O cultivo doméstico garante um tempero sempre fresco, saudável e livre de agrotóxicos.',
+    '15-20 cm',
+    'Tempero culinário em saladas, molhos, sopas, carnes e pratos típicos brasileiros e internacionais. Uso medicinal para auxiliar digestão, aliviar gases e cólicas estomacais. Chás e infusões para indisposições digestivas. Propriedades antimicrobianas e anti-inflamatórias. Pode ajudar a reduzir níveis de colesterol e glicose no sangue. Use folhas frescas para decorar e finalizar pratos.',
+    'Solo leve, bem drenado e rico em matéria orgânica. pH ideal entre 6,0 e 7,0. Prepare uma mistura com terra vegetal, composto orgânico e um pouco de areia para garantir boa drenagem. Evite solos muito compactados que dificultam o desenvolvimento das raízes. O recipiente deve ter furos no fundo para evitar acúmulo de água e prevenir apodrecimento.',
+    'Local com bastante luz natural, preferencialmente 4 a 6 horas de sol direto por dia. Janelas ensolaradas ou varandas são ideais. Evite locais com vento forte que podem prejudicar as folhas delicadas. Temperatura ideal entre 18°C e 25°C, pois o coentro prefere climas amenos. Temperaturas muito altas aceleram o florescimento e reduzem qualidade das folhas. Pode ser cultivado em vasos dentro de apartamentos desde que receba luz adequada.',
+    'Distribua sementes a 1-2 cm de profundidade no solo preparado úmido. Mantenha distância de 10 cm entre sementes. Germinação ocorre entre 7 a 14 dias. Quando mudas tiverem duas folhas verdadeiras, faça desbaste retirando plantas mais fracas. Use sementes de boa procedência, preferencialmente orgânicas. Melhor época para plantar é primavera e outono. Faça rotação de local para evitar esgotamento do solo.',
+    'Mantenha solo sempre úmido, mas sem encharcar. Frequência ideal: 2 a 3 vezes por semana, ajustando conforme clima. Em dias quentes o solo seca rapidamente, observe regularmente. No inverno reduza irrigação para evitar excesso de umidade. Regue delicadamente após plantio para não deslocar sementes. Use água em temperatura ambiente. Evite molhar folhas durante rega para prevenir fungos. Regue pela manhã para manter equilíbrio hídrico.',
+    'Responde bem a adubações orgânicas. Use composto orgânico ou húmus de minhoca a cada 30 dias para garantir nutrientes essenciais (nitrogênio, fósforo, potássio). Evite excesso de fertilizantes químicos que alteram sabor das folhas. Adubação foliar com extratos naturais como chá de camomila fortalecem resistência contra pragas. Realize adubação após colheita para ajudar recuperação e produção de novas folhas.',
+    'Colha quando planta atingir 15-20 cm de altura, entre 40-60 dias após plantio. Use tesoura ou faca para cortar talos próximos à base, evitando arrancar planta inteira para que continue produzindo. Colha pela manhã quando óleos essenciais estão mais concentrados. Evite colher folhas muito velhas ou amareladas. Não há necessidade de poda de formação.',
+    'Muito Fácil',
+    1, -- Coriandrum sativum
+    3  -- Pedro Oliveira (Entusiasta de Temperos)
+);
+
+-- ============================================
+-- 2. CEBOLINHA (Allium fistulosum)
+-- Usuário: Pedro Oliveira (Entusiasta de Temperos)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Cebolinha',
+    'https://images.unsplash.com/photo-1629391925896-45c1b4466370?w=400',
+    'A cebolinha é um tempero versátil e saboroso, perfeito para iniciantes em horticultura. Adapta-se bem a diferentes espaços, desde canteiros no jardim até vasos na varanda de apartamentos. É rica em vitaminas A, C e K, além de compostos sulfurados benéficos à saúde. O cultivo caseiro garante produto livre de agrotóxicos e proporciona atividade terapêutica e gratificante. As folhas verdes tubulares são utilizadas frescas em diversos pratos, adicionando sabor suave e aromático.',
+    '15 cm',
+    'Tempero versátil para saladas, sopas, molhos, omeletes, carnes, peixes e risotos. Finalização de pratos quentes. Ingrediente essencial da culinária brasileira e asiática. Pode ser consumida crua ou cozida. Propriedades antibacterianas e auxiliam na digestão. Rica em antioxidantes que fortalecem sistema imunológico. Use sempre fresca para máximo sabor e benefícios nutricionais.',
+    'Solo rico em matéria orgânica, bem drenado e fértil. pH entre 6,0 e 7,0 (ligeiramente ácido a neutro). Revolva terra a 15 cm de profundidade deixando-a solta e aerada, removendo pedras e raízes. Adicione húmus de minhoca, composto orgânico ou esterco bem curtido para retenção de umidade e fornecimento de nutrientes. Para vasos, escolha recipiente com furos no fundo e crie camada de drenagem com argila expandida ou brita. Vaso deve ter no mínimo 15 cm de profundidade.',
+    'Necessita pelo menos 4 a 6 horas de luz solar direta por dia. Escolha local ensolarado como varanda, janela ou quintal que receba sol durante manhã ou tarde. Em regiões com temperaturas acima de 25°C, local com sol parcial pode ser benéfico pois folhas podem queimar em calor excessivo. Adapta-se bem a cultivo interno em apartamentos desde que receba luz adequada.',
+    'Por SEMENTES: Faça covas de 1 cm de profundidade. Distribua sementes uniformemente com espaçamento de 15 cm entre covas. Cubra com fina camada de terra. Germinação ocorre entre 4-6 dias. Por MUDAS: Método mais rápido. Plante mudas de viveiro na mesma profundidade do recipiente original, com espaçamento de 10-15 cm. Pode usar cebolinha de mercado com raiz: corte folhas 2-5 cm acima da raiz, separe touceiras e plante no solo preparado. Primavera é estação preferencial.',
+    'Solo deve ser mantido úmido, mas nunca encharcado para não apodrecer raízes. Use "dedômetro": se terra estiver seca a 2 cm de profundidade, é hora de regar. Em locais muito ensolarados pode ser necessário regar até 2 vezes ao dia. Regue suavemente após plantio para não desenterrar sementes ou mudas. Molhar folhas também é benéfico. Cobertura de solo com aparas de grama seca ou casca de pinus ajuda manter umidade por mais tempo.',
+    'Fertilize a cada 4 a 6 semanas com fertilizante equilibrado. Adubações orgânicas a cada 15 dias mantêm solo rico em nutrientes. Use húmus de minhoca ou composto orgânico. Evite excesso que pode causar crescimento exagerado em detrimento do sabor. Após cada colheita faça adubação leve para recuperação da planta.',
+    'Colheita inicia quando planta atingir cerca de 15 cm de altura, geralmente entre 30-40 dias após plantio. Utilize tesoura ou faca afiada para cortar folhas externas sempre a 2-3 cm (dois ou três dedos) acima do solo. Evite arrancar folhas com mãos pois prejudica desenvolvimento de novos brotos. Colha regularmente para estimular crescimento de novas folhas.',
+    'Muito Fácil',
+    2, -- Allium fistulosum
+    3  -- Pedro Oliveira (Entusiasta de Temperos)
+);
+
+-- ============================================
+-- 3. SALSINHA/SALSA (Petroselinum crispum)
+-- Usuário: Pedro Oliveira (Entusiasta de Temperos)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Salsinha',
+    'https://images.unsplash.com/photo-1557450734-d8be0b9d548e?w=400',
+    'A salsinha é uma erva aromática clássica que traz aroma, frescor e nutrientes direto da sua janela para a mesa. É rica em vitamina C, clorofila (poderoso antioxidante natural), cálcio e potássio. O cultivo em vaso é prático e econômico, permitindo colher folhas vibrantes, reduzir desperdício e controlar qualidade. Em tempos de busca por alimentos saudáveis e autossuficiência, cultivar salsinha em casa é alternativa inteligente e acessível para temperar suas refeições com ingrediente fresco e orgânico.',
+    '20-30 cm',
+    'Tempero essencial que realça sopas, molhos, saladas, carnes, peixes e massas. Ingrediente final para máximo sabor. Auxilia redução de sal refinado em preparos culinários promovendo refeições mais saudáveis. Rica em vitamina C e antioxidantes. Propriedades diuréticas e digestivas. Pode ser consumida crua em saladas ou adicionada no final do cozimento para preservar nutrientes e aroma. Uso medicinal tradicional para saúde renal.',
+    'Solo leve, bem drenado com substrato nutritivo. Use composto vegetal bem curtido misturado a terra de jardim e perlita para manter leveza, drenagem e nutrir planta. pH ideal entre 6,0 e 7,0. Corrija com calcário se necessário. Evite solos muito ácidos ou compactados que limitam absorção. Prefira vasos com 15-25 cm de profundidade e furos de drenagem. Utilize camada de brita fina no fundo para melhorar escoamento e prevenir encharcamento causador de podridão.',
+    'Posicione vaso onde receba luz solar indireta por 4-6 horas diárias para bom crescimento e aroma intenso. Evite vento forte e regiões muito quentes. Proteção reduz estresse, melhora retenção de umidade e promove folhas mais verdes e vigorosas. Pode ser cultivada próxima a janelas bem iluminadas ou varandas protegidas. Adapta-se bem a ambientes internos com iluminação adequada.',
+    'SEMENTES: Semeie a 0,5-1 cm de profundidade em sulcos rasos. Mantenha substrato úmido até germinação que ocorre entre 7-21 dias. Após emergência realize desbaste mantendo 15-20 cm entre plantas para boa circulação de ar e desenvolvimento foliar. MUDAS: Oferecem colheita mais rápida. Selecione plantas sem pragas ou doenças, com folhas verdes e caules firmes. Plante ciclos a cada 6-8 semanas para fornecimento contínuo. Rotação evita doenças de solo. Em regiões com invernos amenos pode crescer ano todo.',
+    'Regue quando primeiros 2 cm do solo estiverem secos. Mantenha umidade constante sem encharcar para evitar doenças radiculares. Regas pela manhã melhoram absorção e reduzem risco de fungos. Suspenda regas excessivas em períodos chuvosos. Prefira regar de forma regular e moderada ao invés de grandes quantidades esporádicas. Água em temperatura ambiente é ideal.',
+    'Aplique adubo orgânico a cada 4-6 semanas. Fertilizantes NPK equilibrados favorecem folhas vigorosas e intensificam sabor. Microorganismos e corretivos como bokashi ou composto aumentam disponibilidade de nutrientes e promovem saúde do solo a longo prazo. Evite excesso de nitrogênio que causa crescimento excessivo em detrimento da qualidade.',
+    'Realize podas regulares cortando ramos externos. Colha folhas a partir da base preservando botão central para permitir regeneração contínua. Colha pela manhã quando óleos essenciais estão concentrados. Evite colher mais de um terço da planta por vez. Renove planta a cada 3-4 meses ou divida touceiras quando houver perda de vigor para manter produção consistente e folhas tenras.',
+    'Fácil',
+    3, -- Petroselinum crispum
+    3  -- Pedro Oliveira (Entusiasta de Temperos)
+);
+
+-- ============================================
+-- 4. HORTELÃ (Mentha sp.)
+-- Usuário: Juliana Almeida (Iniciante)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Hortelã',
+    'https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=400',
+    'A hortelã é uma erva aromática de aroma refrescante inconfundível, uma das mais versáteis da natureza. Originária da Europa e norte da Ásia, é rica em nutrientes, óleos essenciais (mentol, mentona e limoneno), propriedades medicinais, terapêuticas e desintoxicantes. Planta rústica de rápido crescimento, forma touceiras de 30-90 cm. Mundialmente conhecida e utilizada na indústria farmacêutica, cosmética e alimentícia. O cultivo caseiro é extremamente simples, indo bem até em vasos dentro de casa. Repele insetos naturalmente e atrai polinizadores como abelhas.',
+    '30-90 cm',
+    'Versátil na culinária: tempero em carnes (especialmente cordeiro), molhos, saladas, sopas, sobremesas, sucos, vitaminas, chás, drinks e receitas árabes. Uso medicinal: auxilia digestão, alivia gases, cólicas e resfriados, efeito calmante natural. Aromaterapia associada a frescor e bem-estar. Repelente natural de insetos. Uso em produtos de higiene bucal. Na medicina tradicional trata indisposições digestivas e melhora apetite. Adicione folhas frescas no final do preparo para preservar aroma.',
+    'Solo fértil, bem drenado, rico em matéria orgânica. pH entre 6,0 e 7,0. Terra úmida e bem adubada com composto orgânico ou húmus de minhoca. Adapta-se a diferentes tipos mas prefere solos que mantenham umidade sem encharcar. Adicione matéria orgânica para melhorar qualidade. Em vasos use substrato adequado, recipiente com mínimo 40 cm de diâmetro pois raízes se espalham. Camada de drenagem essencial. Evite canteiros coletivos pois raízes são invasoras.',
+    'Necessita pelo menos 4-6 horas de luz solar direta por dia. Cresce bem em pleno sol ou sombra parcial. Em regiões quentes, sombra parcial é preferível. Adora calor e sol - janelas ensolaradas e varandas bem iluminadas são ideais. Proteja de ventos fortes. Tolera diferentes condições climáticas exceto congelamento do solo. Clima ameno e temperado é mais indicado. Em meses frios mantém-se forte com boa fonte de luz.',
+    'SEMENTES: Semeie a 0,5 cm de profundidade. Mantenha 3 cm entre sementes. Germinação em 7-21 dias. Solo/substrato úmido sem encharcar. Uma semente origina uma planta. MUDAS/ESTAQUIA: Método mais rápido. Corte galho de 10-15 cm, retire folhas inferiores, coloque em água com luz solar até raízes aparecerem. Transplante para solo/vaso com terra enriquecida mantendo úmido. Regue 2x ao dia na primeira semana. Espaçamento: 0,4m entre fileiras e 0,2m entre plantas. Transplante em 25-30 dias. Altura final 70-90 cm.',
+    'Regas frequentes essenciais - não aguenta secura. Solo deve estar constantemente úmido mas não encharcado. Em dias quentes pode ser necessário regar até 2 vezes ao dia. Mantenha copo com galho em água limpa trocando diariamente durante enraizamento. Após estabelecimento regue regularmente observando umidade do solo. Use água em temperatura ambiente. Planta indica necessidade quando folhas murcham.',
+    'Não necessita muitos cuidados. Aplique adubo orgânico (húmus de minhoca ou esterco bovino) a cada 2 meses. Se folhas ficarem amarelas ou planta parar de crescer, indica falta de nutrientes. Use 5g de adubo por litro de vaso. Fertilizantes leves e orgânicos são suficientes. Pode usar seaweed-based fertilizer para estimular crescimento.',
+    'Colheita após cerca de 40 dias quando vaso estiver bem cheio. Use tesoura bem afiada fazendo corte a 5 cm do solo para não danificar pé. Pode retirar todos os ramos - planta se regenera rapidamente. Pode toda planta deixando toquinhos quando caules ficarem finos, compridos e "pelados" com folhas só nas pontas. Poda regular estimula crescimento vigoroso. Retire folhas amareladas e secas.',
+    'Muito Fácil',
+    4, -- Mentha sp.
+    6  -- Juliana Almeida (Iniciante)
+);
+
+-- ============================================
+-- 5. ALFACE (Lactuca sativa)
+-- Usuário: Ana Costa (Horta Urbana)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Alface',
+    'https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400',
+    'A alface é a rainha das hortaliças, uma das mais consumidas no Brasil. Rica em nutrientes, vitaminas (A, C, K), fibras e possui baixo teor calórico, sendo item indispensável na alimentação saudável. Existem diversos tipos: americana (crocante, alta em água), roxa (rica em antocianinas com propriedades antioxidantes), crespa (clássica, rica em fósforo e cálcio), lisa/manteiga (textura macia, rica em clorofila) e romana (folhas resistentes, rica em vitamina K e magnésio). O cultivo caseiro garante produto fresco, orgânico e livre de agrotóxicos.',
+    '15-25 cm',
+    'Base de saladas variadas, ingrediente essencial da alimentação saudável. Acompanha pratos quentes, sanduíches frios e quentes, pizzas vegetarianas, wraps e rolinhos. Pode ser refogada ou em sopas. Rica em fibras que auxiliam digestão. Baixo teor calórico ideal para dietas. Fornece vitaminas essenciais e minerais. Diferentes tipos oferecem texturas e sabores variados. Consumo regular contribui para hidratação e bem-estar. Use sempre folhas frescas e crocantes.',
+    'Solo rico em matéria orgânica, bem drenado e fértil. Use substrato de qualidade com 2/3 do vaso preenchido. Dê preferência a adubos orgânicos como húmus de minhoca. Terra leve e aerada favorece desenvolvimento. Vaso de plástico com mínimo 15 cm de profundidade. ESSENCIAL: recipiente deve ter furos no fundo para evitar acúmulo de água. pH ideal entre 6,0 e 7,0. Adicione composto orgânico para enriquecer nutrientes.',
+    'Necessita boa incidência solar e ventilação adequada. Local que receba luz solar por várias horas diárias. Pode ser cultivada em pequenos vasos em apartamentos. Prefira locais com luz natural abundante mas não sol escaldante o dia todo. Varanda, janela ou pequeno espaço externo são adequados. Temperatura amena favorece desenvolvimento. Evite locais com correntes de vento muito fortes.',
+    'Escolha tipo de alface desejado. Coloque algumas sementes no vaso não muito próximas - cada muda precisa de espaço próprio para desenvolver-se. Cubra delicadamente com terra sem apertar. Borrife água na superfície sem encharcar. Regue diariamente por cerca de 2 semanas até sementes germinarem. Germinação ocorre em poucos dias. Semeie sementes na superfície ou pouco abaixo. Mantenha espaçamento adequado para crescimento.',
+    'Após germinação regue dia sim, dia não. Durante germinação (primeiras 2 semanas) regue diariamente. Solo deve estar sempre úmido mas nunca encharcado. Borrife água suavemente para não deslocar sementes. Regue preferencialmente pela manhã. Quantidade moderada e regular é melhor que regas abundantes esporádicas. Observe solo - se superfície estiver seca é momento de regar. Evite molhar excessivamente as folhas.',
+    'Use fertilizante orgânico como húmus de minhoca na preparação inicial do solo. Durante crescimento aplique adubação leve a cada 3-4 semanas. Composto orgânico fornece nutrientes gradualmente. Evite excesso de nitrogênio que pode deixar folhas muito grandes e menos saborosas. Adubo equilibrado mantém crescimento saudável. Terra bem preparada inicialmente reduz necessidade de adubações frequentes.',
+    'Colheita entre 60-90 dias dependendo da variedade. Observe tamanho e cor das folhas conforme tipo plantado. OPÇÃO 1: Corte cabeça da alface com faca ou tesoura deixando base no vaso para segunda colheita. OPÇÃO 2: Colha apenas folhas maiores/externas permitindo que folhas internas continuem desenvolvendo. Colha pela manhã quando folhas estão mais túrgidas. Use tesoura limpa e afiada.',
+    'Fácil',
+    5, -- Lactuca sativa
+    4  -- Ana Costa (Horta Urbana)
+);
+
+-- ============================================
+-- 6. COUVE (Brassica oleracea var. acephala)
+-- Usuário: Ana Costa (Horta Urbana)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Couve',
+    'https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?w=400',
+    'A couve é hortaliça folhosa membro da família das brássicas (repolho/mostarda), planta bienal resistente. Existem diversos tipos: crespa/escocesa (folhas encaracoladas), folhas largas siberiana, Red Russian (folhas azul-esverdeadas com tons roxos), toscana preta/dinosaur (folhas estreitas azuladas textura crespada), ornamentais multicoloridas comestíveis. Excelente fonte de vitaminas A, C, K e rica em cálcio. Cultura de clima frio que requer dois meses de clima fresco para colheita. Sabor melhora após geadas. Geralmente livre de pragas e doenças.',
+    '30-90 cm',
+    'Hortaliça nutritiva para saladas (folhas jovens), refogados, sopas, sucos verdes, chips assados. Pode ser cozida como repolho, servida com manteiga e limão, combinada com carnes. Base de pratos tradicionais como Caldo Verde português. Uso cru em saladas quando colhida jovem. Rica em fibras e antioxidantes. Folhas externas expostas ao sol são ricas em vitamina C e cálcio. Sabor forte combina bem com temperos intensos. Consumo regular fortalece sistema imunológico.',
+    'Solo rico em húmus, bem drenado, pH entre 6,5-6,8. Prefere solo argiloso. Adicione quantidade moderada de esterco bem curtido ou composto. Sabor e textura declinam em solos arenosos leves ou argilosos pesados. Solo muito rico em nitrogênio causa crescimento extra-suculento atraindo pragas. Prepare canteiro adicionando matéria orgânica bem decomposta. Boa drenagem é essencial. Terra fértil e estruturada favorece raízes.',
+    'Plante em pleno sol. Em regiões quentes plante em sombra parcial. Para sabor ótimo cultive em clima fresco. Cresce melhor onde há geadas. Não gosta de longos períodos de calor intenso de verão. Temperatura média ideal entre 15-18°C. Tolera temperaturas até -6°C. Pode ser cultivada sob cobertura (estufa fria, túnel plástico, cobertura) no inverno para folhas mais tenras.',
+    'Comumente iniciada dentro de casa e transplantada quando mudas têm 4-6 semanas. Semeie sementes 1,2 cm de profundidade espaçadas 7 cm. Quando mudas tiverem 10-12 cm afine para 30-38 cm entre plantas. Espaçamento entre fileiras: 45-61 cm. Em canteiros equidistantes deixe 38-45 cm entre plantas. Transplante com caules tortos até primeiras folhas. Semeie 4-6 semanas antes última geada da primavera ou assim que solo possa ser trabalhado. Para colheita de outono semeie 10 semanas antes primeira geada esperada.',
+    'Mantenha bem regada para crescimento sustentado e evitar folhas muito duras. Prefere solo úmido, não encharcado. Regue durante estágios iniciais para plantas estabelecerem-se bem. Continue regando regularmente especialmente em meses quentes. Solo deve manter umidade constante. Regas pela manhã são preferíveis. Evite encharcar que pode causar doenças radiculares. Mulch ajuda reter umidade.',
+    'Adicione composto rico em nutrientes aos canteiros antes do plantio. Quando mudas tiverem 10-12 cm aplique fertilizante rico em nitrogênio (esterco curtido ou farinha de sangue) ou regue com chá de esterco. Aplique composto envelhecido lateralmente a cada 6 semanas. Plantas que hibernaram devem ser alimentadas com fertilizante à base de algas marinhas na primavera para estimular novo crescimento. Evite excesso de nitrogênio.',
+    'Colheita 55 dias após transplante, 70-80 dias após semeadura. COLHEITA CONTÍNUA: Colha folhas individuais (rosetas) começando pelas externas deixando centro crescer. Corte folhas individuais quando planta tiver 20-25 cm. Colher algumas folhas por vez prolonga estação. COLHEITA TOTAL: Corte planta inteira 5 cm acima do solo - brotará novas folhas em 1-2 semanas. Folhas mais tenras estão no topo. Sabor melhora após primeira geada. Remova folhas velhas ou apodrecidas inferiores.',
+    'Média',
+    6, -- Brassica oleracea var. acephala
+    4  -- Ana Costa (Horta Urbana)
+);
+
+-- ============================================
+-- 7. TOMATE (Solanum lycopersicum)
+-- Usuário: Ana Costa (Horta Urbana)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Tomate',
+    'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=400',
+    'O tomate é uma das hortaliças mais cultivadas e consumidas no mundo, fruto da planta Solanum lycopersicum. Rico em licopeno (poderoso antioxidante), vitaminas A, C e K, potássio e fibras. Existem inúmeras variedades: cereja, italiano, carmem, salada, entre outros. Pode ser determinado (crescimento limitado, mais compacto) ou indeterminado (crescimento contínuo, precisa tutoramento). O cultivo caseiro garante tomates saborosos, suculentos e livres de agrotóxicos. Planta de clima quente que necessita cuidados específicos mas recompensa com produção abundante.',
+    '40-200 cm (varia conforme variedade)',
+    'Versátil na culinária: consumo in natura em saladas, sanduíches, sucos. Preparo de molhos, sopas, conservas, geleias, tomates secos. Ingrediente base de inúmeras receitas da culinária mundial. Rico em licopeno que previne doenças cardiovasculares e alguns tipos de câncer. Vitaminas fortalecem sistema imunológico. Baixo teor calórico. Diferentes variedades oferecem sabores e texturas únicos. Tomates frescos são fonte de hidratação e nutrientes essenciais.',
+    'Solo profundo, fértil, bem drenado, rico em matéria orgânica. pH ideal entre 6,0 e 6,8. Prepare mistura com terra vegetal, composto orgânico e húmus de minhoca. Solo deve reter umidade mas não encharcar. Adicione areia para melhorar drenagem se necessário. Vaso precisa ter mínimo 30-40 cm de profundidade para variedades menores, 50-60 cm para indeterminadas. Furos de drenagem são essenciais. Evite solos compactados ou muito argilosos.',
+    'Necessita pleno sol - mínimo 6-8 horas de luz solar direta por dia. Quanto mais sol, melhor produção. Local protegido de ventos fortes que podem quebrar galhos. Temperatura ideal entre 20-28°C durante dia, 15-20°C à noite. Não tolera geadas. Em regiões muito quentes proporcione sombra leve nas horas mais quentes. Varanda ensolarada, quintal ou local externo com boa exposição solar são ideais. Plantas precisam de boa circulação de ar.',
+    'Inicie por SEMENTES em sementeiras/copinhos: semeie 0,5-1 cm de profundidade, mantenha úmido, germinação em 5-10 dias. Transplante quando mudas tiverem 10-15 cm ou 4-6 folhas verdadeiras (25-35 dias). Ou use MUDAS prontas de viveiro. Enterre caule até primeiras folhas para raízes mais fortes. Espaçamento: 50-80 cm entre plantas. Para indeterminadas instale tutor/estaca de 1,5-2 m no plantio. Amarre planta conforme cresce. Melhor época: primavera após última geada. Em regiões quentes evite verão intenso.',
+    'Tomateiros precisam água regular e consistente. Solo deve estar sempre úmido mas nunca encharcado. Regue 2-3 vezes por semana em clima ameno, diariamente em épocas quentes. Prefira regar pela manhã diretamente no solo evitando molhar folhas (previne doenças fúngicas). Quantidade: solo úmido a 15-20 cm de profundidade. Use mulch (palha/serragem) ao redor da base para manter umidade. Irregular pode causar rachadura dos frutos. Reduza regas quando frutos começarem amadurecer.',
+    'FASE INICIAL: Use fertilizante rico em fósforo para desenvolvimento de raízes. CRESCIMENTO: Aplique NPK 10-10-10 ou adubo orgânico (esterco curtido, húmus) a cada 15-20 dias. FLORAÇÃO/FRUTIFICAÇÃO: Fertilizante rico em potássio (NPK 4-14-8) para melhor produção e sabor dos frutos. Evite excesso de nitrogênio que causa crescimento excessivo de folhas e poucos frutos. Adubação foliar com cálcio previne podridão apical. Farinha de osso fornece fósforo e cálcio.',
+    'ESSENCIAL para variedades indeterminadas. Remova brotações laterais (ladrões) que crescem entre caule principal e folhas - consomem energia da planta. Faça desbrota semanalmente quando brotos tiverem 5-10 cm. Pode-se conduzir planta em 1 ou 2 hastes principais. Remova folhas inferiores amareladas ou que toquem solo. Após 4-5 cachos florais pode-se podar ponta principal para direcionar energia aos frutos. Use tesoura limpa. Variedades determinadas necessitam pouca ou nenhuma poda.',
+    'Média a Difícil',
+    7, -- Solanum lycopersicum
+    4  -- Ana Costa (Horta Urbana)
+);
+
+-- ============================================
+-- 8. PIMENTA (Capsicum frutescens)
+-- Usuário: Beatriz Souza (Cultivo Orgânico)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Pimenta',
+    'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400',
+    'A pimenta é fruto de plantas do gênero Capsicum, conhecida pelo sabor picante conferido pela capsaicina. Existem diversas variedades: malagueta, cumari, dedo-de-moça, biquinho, jalapeño, habanero. Rica em vitaminas A e C, possui propriedades antioxidantes, anti-inflamatórias, acelera metabolismo e auxilia emagrecimento. Cultivada há milhares de anos, é ingrediente essencial em diversas culinárias. Planta perene que pode produzir por vários anos. Além de ornamental com frutos coloridos, atrai polinizadores. Cultivo em vaso é prático e decorativo.',
+    '30-120 cm (dependendo da variedade)',
+    'Condimento picante em molhos, conservas, azeites, vinagres aromatizados. Tempero de carnes, aves, peixes, massas, pizzas. Ingrediente de pimentões recheados. Uso medicinal: ação analgésica tópica, acelera metabolismo, melhora circulação, propriedades antibacterianas. Rica em capsaicina que tem efeito termogênico. Consumo moderado estimula endorfinas. Diferentes variedades oferecem intensidades de picância. Pimentas frescas têm mais vitaminas que secas. Use com moderação respeitando tolerância individual.',
+    'Solo fértil, leve, bem drenado, rico em matéria orgânica. pH ideal entre 6,0 e 7,0. Misture terra vegetal com composto orgânico, húmus de minhoca e areia em partes iguais. Solo deve reter umidade mas drenar bem. Vasos precisam ter mínimo 30 cm de diâmetro e profundidade, com furos no fundo. Camada de drenagem com argila expandida ou brita. Evite solos muito compactados ou argilosos pesados. Boa aeração das raízes é fundamental.',
+    'Necessita sol pleno - mínimo 6-8 horas de luz solar direta diária para boa frutificação. Quanto mais sol, mais frutos e maior concentração de capsaicina (picância). Temperatura ideal entre 20-30°C. Não tolera geadas ou frio intenso (abaixo de 10°C). Local protegido de ventos fortes. Em regiões tropicais e subtropicais desenvolve-se melhor. Pode ser cultivada em varandas ensolaradas, quintais ou pátios. Adapta-se bem a cultivo em vasos.',
+    'Semeie em SEMENTEIRAS: profundidade 0,5 cm, solo úmido, temperatura 25-30°C. Germinação em 7-20 dias (pode demorar). Transplante quando mudas tiverem 10-15 cm e 4-6 folhas verdadeiras (6-8 semanas). Ou compre MUDAS prontas. Transplante com cuidado para não danificar raízes. Enterre até cotilédones (primeiras folhas). Espaçamento 40-50 cm entre plantas. Instale tutor para variedades maiores. Melhor época: primavera quando temperaturas estão estáveis acima de 15°C. Em regiões quentes pode plantar quase ano todo.',
+    'Mantenha solo levemente úmido mas nunca encharcado. Raízes apodrecem facilmente com excesso de água. Regue quando superfície do solo estiver seca ao toque (2-3 cm). Frequência: 2-3 vezes por semana dependendo do clima. Em fases de floração e frutificação aumente frequência. Regue pela manhã diretamente no solo evitando molhar folhas e frutos. Use água em temperatura ambiente. Mulch ajuda manter umidade. Reduza regas no inverno se planta entrar em dormência.',
+    'Inicie com solo bem adubado. CRESCIMENTO VEGETATIVO: Fertilizante rico em nitrogênio (NPK 10-5-5) a cada 15-20 dias. FLORAÇÃO: Reduza nitrogênio, aumente fósforo e potássio (NPK 5-10-10) para estimular flores e frutos. Durante FRUTIFICAÇÃO: Continue com alto potássio. Use adubos orgânicos: húmus, esterco curtido, farinha de osso, torta de mamona. Adubação foliar com micronutrientes pode ser benéfica. Cálcio e magnésio importantes para saúde da planta.',
+    'Poda de FORMAÇÃO: Quando muda tiver 20-25 cm, pode podar ponta para estimular ramificação lateral. Poda de LIMPEZA: Remova folhas amareladas, galhos secos ou doentes. Remova brotos que crescem abaixo da primeira bifurcação (pernadas). Após colheita principal pode fazer poda de renovação cortando 1/3 da planta para nova brotação. Use sempre tesoura limpa e afiada. Colheita dos frutos quando atingirem cor e tamanho característicos da variedade. Corte com tesoura deixando pequeno pedúnculo.',
+    'Média',
+    8, -- Capsicum frutescens
+    10 -- Beatriz Souza (Cultivo Orgânico)
+);
+
+-- ============================================
+-- 9. LIMÃO - Limoeiro (Citrus x limon)
+-- Usuário: Roberto Mendes (Especialista Fruticultura)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Limão',
+    'https://images.unsplash.com/photo-1590502593747-42a996133562?w=400',
+    'O limoeiro é árvore frutífera cítrica perene da família Rutaceae, que pode produzir frutos praticamente o ano todo. Limão siciliano, Tahiti, cravo e galego são variedades comuns. Fruto rico em vitamina C, antioxidantes, ácido cítrico. Árvore pode viver muitos anos produzindo continuamente. Folhas aromáticas também têm propriedades. Flores brancas perfumadas atraem polinizadores. Embora seja árvore, variedades enxertadas podem ser cultivadas em vasos grandes. Planta tropical/subtropical que necessita calor e sol abundante.',
+    '2-6 metros (varia com variedade e condução)',
+    'Fruto versátil: suco para bebidas, limonadas, drinks, tempero de peixes, carnes, saladas. Uso em doces, geleias, mousses, tortas. Casca ralada (zeste) aromatiza pratos. Propriedades medicinais: rico em vitamina C, fortalece imunidade, auxilia digestão, alcalinizante natural. Uso em produtos de limpeza naturais. Óleo essencial da casca tem propriedades aromáticas. Conservante natural. Folhas usadas em chás. Limão orgânico caseiro tem sabor superior e mais nutrientes.',
+    'Solo profundo, fértil, bem drenado, rico em matéria orgânica. pH entre 5,5 e 6,5 (levemente ácido). Não tolera solos encharcados ou muito compactados. Misture terra vegetal com composto orgânico, areia e esterco bem curtido. Para VASOS grandes: mínimo 50-80 litros (40-50 cm diâmetro e profundidade). Camada espessa de drenagem. Use substrato para cítricos ou prepare mistura leve. Boa drenagem é CRÍTICA - raízes apodrecem facilmente. Solo areno-argiloso é ideal.',
+    'Pleno sol ESSENCIAL - mínimo 6-8 horas diárias, idealmente mais. Quanto mais sol, mais flores e frutos. Temperatura ideal 20-30°C. Tolera calor intenso mas não geadas (danifica seriamente). Proteja de ventos frios e fortes. Local com boa circulação de ar mas protegido. Em regiões frias cultive em vasos que possam ser movidos para dentro no inverno. Regiões tropicais e subtropicais são ideais. Necessita espaço pois copa se expande.',
+    'Prefira MUDAS ENXERTADAS de viveiros idôneos - produzem mais rápido (2-3 anos) e são mais resistentes. Mudas de semente demoram 5-7 anos para frutificar. Transplante com cuidado preservando torrão de raízes. Plante na mesma profundidade que estava no recipiente original. Época ideal: primavera após última geada. Cova deve ter dobro do tamanho do torrão. Misture composto orgânico ao solo de plantio. Para vasos escolha variedade anã ou controle tamanho com podas. Tutore plantas jovens.',
+    'Regas regulares importantes especialmente durante floração e frutificação. Solo deve secar levemente entre regas - toque o solo a 5 cm de profundidade. Frequência: 2-3 vezes por semana no verão, 1-2 vezes no inverno. Plantas jovens e em vasos precisam regas mais frequentes. Regue profundamente molhando toda zona radicular. Evite encharcar ou deixar secar completamente. Mulch orgânico ajuda manter umidade. Reduza regas no inverno. Sinais de stress hídrico: folhas murchas ou amareladas.',
+    'Cítricos são exigentes em nutrientes. Use FERTILIZANTE ESPECÍFICO PARA CÍTRICOS seguindo instruções. Ou NPK 10-5-10 com micronutrientes. Aplique a cada 2-3 meses na primavera/verão. CRONOGRAMA: Primavera (brotação), início verão (floração), final verão (frutificação). Use esterco curtido, húmus, farinha de osso. Micronutrientes importantes: ferro, zinco, manganês, boro. Sintomas de deficiências aparecem nas folhas. Não adube em excesso no inverno. Adubação foliar pode complementar.',
+    'Poda de FORMAÇÃO em plantas jovens: conduza 3-4 ramos principais equilibrados. Poda de LIMPEZA anual: remova galhos secos, doentes, cruzados ou que crescem para dentro. Melhor época: final do inverno/início primavera (antes da brotação). Elimine ramos ladrões que crescem abaixo do ponto de enxerto. Desbrote excessivo após floração pode melhorar tamanho dos frutos. Poda de RENOVAÇÃO em árvores velhas: corte ramos improdutivos. Sempre use ferramentas limpas e afiadas. Desinfete entre cortes.',
+    'Média a Difícil',
+    9, -- Citrus x limon
+    7  -- Roberto Mendes (Especialista Fruticultura)
+);
+
+-- ============================================
+-- 10. BANANA - Bananeira (Musa spp.)
+-- Usuário: Roberto Mendes (Especialista Fruticultura)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Banana',
+    'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400',
+    'A bananeira é planta herbácea gigante da família Musaceae, originária do sudeste asiático. Tecnicamente não é árvore mas erva de grande porte - "tronco" é formado por bainhas foliares. Existem diversas variedades: prata, nanica, maçã, ouro, da terra. Rica em potássio, vitaminas B6 e C, fibras, carboidratos. Planta tropical que produz cachos generosos. Após frutificar, pseudocaule morre mas emite novos brotos (filhotes/perfilhos) garantindo produção contínua. Folhas grandes e ornamentais. Cultivo necessita espaço e clima adequado.',
+    '2-6 metros (dependendo da variedade)',
+    'Fruto consumido in natura - lanche saudável, nutritivo, energético. Uso em vitaminas, smoothies, bolos, doces, biomassa (banana verde), chips. Banana da terra para preparos cozidos. Rica em potássio essencial para músculos e coração. Fonte rápida de energia. Triptofano auxilia produção de serotonina. Fibras auxiliam digestão. Folhas usadas como embalagem natural em culinária tradicional. Flor de bananeira (coração) também é comestível. Diferentes variedades oferecem sabores e usos únicos.',
+    'Solo profundo, fértil, bem drenado, rico em matéria orgânica. pH entre 6,0 e 7,5. Solo argiloso ou areno-argiloso ideal. NÃO tolera encharcamento mas precisa boa retenção de umidade. Prepare cova grande (60x60x60 cm) com bastante composto orgânico, esterco curtido e terra vegetal. Bananeira é muito exigente em nutrientes e matéria orgânica. Solo deve ser profundo pois raízes são vigorosas. Evite solos muito arenosos ou compactados. Boa drenagem evita doenças.',
+    'Pleno sol ESSENCIAL - 8-12 horas diárias. Quanto mais sol, melhor produção. Temperatura ideal 15-35°C, ótimo 25-30°C. Não tolera geadas (pode matar planta). Em regiões com geada leve, proteja touceira com palha. Necessita umidade ambiental alta - clima tropical/subtropical úmido é ideal. Local protegido de ventos fortes que rasgam folhas grandes. Necessita MUITO espaço - afaste 3-4 metros de outras plantas e construções. Prefira locais baixos onde acumula umidade naturalmente.',
+    'Use MUDAS (filhotes/perfilhos) de bananeiras saudáveis e produtivas - separe quando tiverem 50-60 cm. Ou compre mudas de viveiro certificado tipo "chifrinho" ou "chifrão". Plante em COVAS preparadas com 30 dias antecedência. Profundidade: enterre rizoma 20-30 cm. Preencha com mistura rica em matéria orgânica. Espaçamento: 3-4 metros entre plantas. Melhor época: início das chuvas (primavera/verão). Proteja mudas jovens do sol intenso nos primeiros dias. Evite danificar rizoma no plantio.',
+    'Bananeira necessita MUITA água - é planta de ambientes úmidos. Solo deve estar sempre úmido mas nunca encharcado. Regas frequentes e abundantes: 2-3 vezes por semana em época seca, reduzindo em período chuvoso. Adultas precisam 80-100 litros de água/semana em época quente. Distribua água ao redor da touceira. Irrigação por gotejamento é ideal. Mulch grosso de palha ou folhas ao redor mantém umidade. Falta de água reduz drasticamente produção. Excesso causa apodrecimento do rizoma.',
+    'Bananeira é MUITO exigente - grande consumidora de nutrientes. ADUBAÇÃO DE PLANTIO: Use 10-20 litros de esterco curtido ou composto orgânico na cova. MANUTENÇÃO: A cada 2-3 meses aplique ao redor: esterco curtido (10 litros), farinha de osso (200g), cinzas (100g). Ou use NPK 10-5-30 (rico em potássio). Adubo orgânico líquido mensalmente. Micronutrientes importantes: zinco, boro. Após colheita do cacho adube generosamente. Distribua adubos ao redor em círculo, nunca junto ao pseudocaule.',
+    'Poda de MANUTENÇÃO: Corte folhas secas, velhas ou rasgadas rente ao pseudocaule. Após COLHEITA: Corte pseudocaule que frutificou rente ao solo (ele morre após frutificar). DESBASTE DE FILHOTES: Mantenha apenas 3-4 pseudocaules por touceira (1 produzindo, 1 médio, 1-2 pequenos) - elimine excesso. Escolha filhotes mais vigorosos e bem posicionados. Corte com facão limpo e afiado. Deixar muitos filhotes reduz produção. Remova inflorescência masculina (coração) 15 dias após última penca para concentrar energia nos frutos.',
+    'Média',
+    10, -- Musa spp.
+    7   -- Roberto Mendes (Especialista Fruticultura)
+);
+
+-- ============================================
+-- 11. MANJERICÃO (Ocimum basilicum)
+-- Usuário: Juliana Almeida (Iniciante)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Manjericão',
+    'https://images.unsplash.com/photo-1618375569909-3c8616cf7733?w=400',
+    'O manjericão é erva aromática anual da família Lamiaceae, originária da Índia. Uma das ervas mais populares da culinária mundial, especialmente italiana e tailandesa. Existem diversas variedades: genovês (mais comum), roxo, limão, tailandês, doce. Aroma marcante e sabor inconfundível. Rico em óleos essenciais (eugenol, linalol), antioxidantes, vitaminas A, K, C e minerais. Propriedades medicinais: anti-inflamatória, antibacteriana, digestiva. Planta de fácil cultivo que cresce rápido. Flores atraem polinizadores. Repele alguns insetos naturalmente.',
+    '30-60 cm',
+    'Erva aromática essencial na culinária italiana: molho pesto, pizzas, massas, caprese. Tempero de carnes, peixes, saladas, sopas. Aromatiza azeites e vinagres. Adicione folhas frescas ao final do preparo para preservar aroma. Uso medicinal: auxilia digestão, alivia gases, propriedades anti-inflamatórias e antibacterianas. Chá calmante e digestivo. Óleo essencial usado em aromaterapia. Repelente natural de mosquitos. Melhor usado fresco - secagem reduz intensidade do sabor. Diferentes variedades oferecem aromas únicos.',
+    'Solo fértil, bem drenado, rico em matéria orgânica. pH entre 6,0 e 7,0. Misture terra vegetal com composto orgânico e húmus de minhoca em partes iguais. Solo deve ser leve e aerado. Vasos necessitam mínimo 20 cm de profundidade e largura. Furos de drenagem essenciais - manjericão não tolera encharcamento. Camada de drenagem com argila expandida. Evite solos muito argilosos ou compactados. Prefira substratos leves que drenem bem mas mantenham umidade moderada.',
+    'Necessita pleno sol - mínimo 6-8 horas de luz solar direta diária. Quanto mais sol, mais folhas e aroma intenso. Temperatura ideal 20-30°C. Sensível ao frio - não tolera geadas ou temperaturas abaixo de 10°C. Local protegido de ventos fortes que podem quebrar hastes. Em regiões muito quentes, sombra leve nas horas mais intensas pode ser benéfica. Ideal para varandas ensolaradas, janelas bem iluminadas, quintais. Planta de clima tropical/subtropical. No inverno pode precisar proteção ou cultivo interno.',
+    'SEMENTES: Semeie 0,5 cm de profundidade, espaçamento 5 cm. Mantenha úmido. Germinação em 5-10 dias. Transplante quando tiver 4-6 folhas (3-4 semanas). MUDAS: Compre em viveiros ou faça ESTAQUIA - corte ramo de 10 cm, remova folhas inferiores, coloque em água até enraizar (7-10 dias), depois plante. Espaçamento final: 20-30 cm entre plantas. Melhor época: primavera/verão quando temperaturas estão acima de 15°C. Pode plantar em ciclos sucessivos para colheita contínua.',
+    'Mantenha solo levemente úmido mas nunca encharcado. Manjericão gosta de umidade mas raízes apodrecem facilmente. Regue quando superfície do solo estiver seca ao toque. Frequência: 1-2 vezes ao dia em clima quente, 3-4 vezes por semana em clima ameno. Regue pela manhã diretamente no solo evitando molhar folhas. Em dias muito quentes pode murchar durante tarde - normal se recuperar à noite. Reduza regas se clima estiver frio ou úmido. Plantas em vasos secam mais rápido.',
+    'Use fertilizante orgânico líquido diluído a cada 15-20 dias durante crescimento ativo. NPK 10-10-10 é adequado. Ou aplique húmus de minhoca ou composto ao redor da base mensalmente. Evite excesso de nitrogênio que causa crescimento exagerado de folhas menos aromáticas. Chá de esterco ou biofertilizante caseiro funcionam bem. Durante floração pode reduzir adubação. Plantas em vasos necessitam adubação mais frequente que no solo.',
+    'Poda ESSENCIAL para planta produtiva e compacta. Quando planta tiver 15-20 cm, pode ponta principal para estimular ramificação lateral. Pode regularmente as pontas dos ramos - estimula brotações laterais e mais folhas. Remova flores assim que aparecerem - floração reduz qualidade das folhas. Corte sempre acima de um nó (onde nascem folhas). Colha folhas maiores regularmente começando pelas de cima. Poda a cada 7-10 dias mantém planta jovem e produtiva. Use tesoura limpa.',
+    'Fácil',
+    11, -- Ocimum basilicum
+    6   -- Juliana Almeida (Iniciante)
+);
+
+-- ============================================
+-- 12. ERVA-CIDREIRA / Capim-Cidreira (Cymbopogon citratus)
+-- Usuário: Carlos Ferreira (Especialista Plantas Medicinais)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Erva-Cidreira',
+    'https://images.unsplash.com/photo-1628098932047-28f9da5d5c15?w=400',
+    'Capim-cidreira ou capim-limão é planta herbácea perene da família Poaceae, originária da Ásia tropical. Forma touceiras densas de folhas longas e estreitas. Aroma cítrico intenso devido ao óleo essencial citral. Muito utilizada na medicina popular brasileira. Diferente da melissa (também chamada erva-cidreira), que tem folhas largas. Planta rústica e vigorosa que cresce facilmente. Repele mosquitos naturalmente. Resistente e de baixa manutenção. Pode permanecer produtiva por muitos anos com divisão periódica das touceiras.',
+    '60-120 cm',
+    'Principalmente para chás calmantes, digestivos e relaxantes. Infusão das folhas frescas ou secas alivia ansiedade, insônia, cólicas, má digestão. Uso culinário na cozinha asiática: sopas tailandesas, vietnamitas, currys, marinadas de carnes e peixes. Aromatiza bebidas geladas. Óleo essencial usado em aromaterapia, perfumaria, produtos de limpeza. Repelente natural de insetos. Propriedades antifúngicas e antibacterianas. Base do pseudocaule (parte branca) é usada como tempero. Folhas secas duram meses mantendo aroma.',
+    'Solo fértil, bem drenado, rico em matéria orgânica. pH entre 5,5 e 7,5 - planta adaptável. Tolera diversos tipos de solo mas prefere areno-argilosos. Adicione composto orgânico ou esterco curtido. Não é muito exigente quanto ao solo. Para vasos use mínimo 40-50 cm de diâmetro e profundidade pois forma touceiras grandes. Boa drenagem evita apodrecimento da base. Solo não pode ser muito compactado. Mistura de terra vegetal com composto e areia funciona bem.',
+    'Pleno sol ideal - 6-8 horas diárias para melhor desenvolvimento e concentração de óleos essenciais. Tolera sombra parcial mas produz menos. Temperatura ideal 20-35°C. Planta tropical que ama calor. Não tolera geadas intensas (pode morrer) mas pode suportar geadas leves com proteção. Em regiões frias cultive em vasos que possam ser protegidos. Adapta-se bem a climas quentes e secos. Local com boa circulação de ar. Tolera ventos moderados.',
+    'Melhor método é por DIVISÃO DE TOUCEIRAS. Obtenha pedaço de touceira adulta com raízes de planta saudável. Separe tufos com 3-5 hastes usando faca afiada ou pá. Plante imediatamente cobrindo base com 5-8 cm de terra. Ou compre mudas em viveiros. Espaçamento: 50-80 cm entre plantas pois touceiras se expandem. Profundidade: enterre base deixando folhas acima do solo. Melhor época: primavera/verão início das chuvas. Planta raramente produz sementes viáveis. Multiplique dividindo touceiras a cada 2-3 anos.',
+    'Mantenha solo levemente úmido durante estabelecimento (primeiros 2-3 meses). Após estabelecida é MUITO resistente à seca. Regue 1-2 vezes por semana em período seco, especialmente em vasos. Planta no solo pode necessitar pouca água suplementar após estabelecida. Tolera períodos de seca mas produz melhor com umidade regular. Não tolera encharcamento - raízes apodrecem. Em época chuvosa geralmente dispensa regas. Observar planta - folhas murcham quando precisa água.',
+    'Não é muito exigente. Aplique composto orgânico ou esterco curtido ao redor da touceira 2-3 vezes ao ano (primavera, verão, outono). Ou use NPK 10-10-10 a cada 2-3 meses durante período de crescimento. Adubação orgânica leve é suficiente. Excesso de fertilização não traz muitos benefícios. Cobertura morta ao redor ajuda manter umidade e fornece nutrientes gradualmente. Em vasos adube com mais frequência. Planta estabelecida é pouco exigente.',
+    'Colha folhas conforme necessidade cortando perto da base com faca ou tesoura. Folhas mais velhas (externas) têm mais sabor. Corte hastes inteiras se desejar. Após alguns meses pode fazer poda de renovação: corte toda touceira a 10-15 cm do solo - rebrotará vigorosamente. Melhor época para poda drástica: final do inverno/início primavera. Remova folhas secas ou amareladas. Divida touceiras a cada 2-3 anos quando ficarem muito densas ou centro começar a morrer - revigora planta.',
+    'Muito Fácil',
+    12, -- Cymbopogon citratus
+    5   -- Carlos Ferreira (Especialista Plantas Medicinais)
+);
+
+-- ============================================
+-- 13. ARRUDA (Ruta graveolens)
+-- Usuário: Carlos Ferreira (Especialista Plantas Medicinais)
+-- ============================================
+INSERT INTO plantas (nome, urlfoto, descricao, altura, uso, solo, locali, plantio, rega, adubacao, poda, dificuldade, id_especie, id_usuario)
+VALUES (
+    'Arruda',
+    'https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=400',
+    'A arruda é planta herbácea perene da família Rutaceae, originária do sul da Europa. Conhecida desde antiguidade por usos medicinais e místicos. Folhas azul-esverdeadas, flores amarelas pequenas. Aroma forte e característico. Tradicionalmente associada a proteção espiritual e energética em diversas culturas. Contém compostos como rutina (fortalece vasos sanguíneos). Planta rústica e resistente que vive muitos anos. IMPORTANTE: Contém substâncias fotossensibilizantes que podem causar dermatite em contato com pele e exposição ao sol. Tóxica em grandes quantidades, especialmente para gestantes.',
+    '40-100 cm',
+    'Uso ORNAMENTAL e cultural: planta de jardim decorativa, associada a proteção em crenças populares. Uso MEDICINAL tradicional (COM CUIDADO): chás em doses baixas para cólicas menstruais, propriedades anti-inflamatórias, fortalece vasos sanguíneos (rutina). ATENÇÃO: NÃO use durante gestação (abortiva), em crianças pequenas ou em grandes quantidades. Pode causar irritação cutânea. Consulte profissional de saúde antes de uso medicinal. Repelente natural de alguns insetos. Flores atraem borboletas. Use luvas ao manusear para evitar dermatite.',
+    'Solo bem drenado, pobre a moderadamente fértil. pH entre 6,0 e 7,5. Tolera solos pobres, pedregosos, secos. NÃO necessita solo rico - cresce melhor em solos menos férteis. Excesso de nutrientes causa crescimento excessivo e reduz produção de óleos essenciais. Essencial: drenagem perfeita - não tolera encharcamento. Para vasos use mistura com boa parte de areia, argila expandida ou pedrisco. Solo calcário é bem tolerado. Adicione cascalho ou areia se solo for pesado.',
+    'Pleno sol ESSENCIAL - mínimo 6-8 horas diárias. Quanto mais sol, melhor desenvolvimento e aroma. Temperatura ideal 15-30°C. Tolera calor intenso. Resiste a geadas leves (até -10°C) mas pode perder folhagem recuperando-se na primavera. Em regiões muito frias pode precisar proteção no inverno. Local seco, bem ventilado, sem umidade excessiva. Excelente para jardins de pedra, locais secos onde outras plantas têm dificuldade. Evite locais muito sombreados ou úmidos.',
+    'SEMENTES: Semeie na superfície ou levemente cobertas (0,5 cm) pois precisam luz para germinar. Germinação em 10-21 dias. Transplante quando mudas tiverem 10 cm. MUDAS: Mais prático - compre em viveiros. ESTACAS: Corte ramos semi-lenhosos de 10-15 cm, remova folhas inferiores, plante em substrato arenoso, mantenha levemente úmido. Enraizamento em 3-4 semanas. Espaçamento: 40-60 cm entre plantas. Melhor época: primavera. Em regiões quentes pode plantar quase ano todo.',
+    'Planta de BAIXA necessidade hídrica após estabelecida. Durante primeiros 2-3 meses mantenha solo levemente úmido. Após estabelecida prefere solo mais seco - regue apenas quando solo estiver seco. Frequência: 1 vez por semana ou menos em clima ameno. Em verão quente 2 vezes por semana. NUNCA encharque - excesso de água causa apodrecimento de raízes e é causa principal de morte. Em vasos deixe solo secar bem entre regas. Planta tolera seca melhor que umidade excessiva.',
+    'Pouca ou NENHUMA adubação necessária. Arruda prefere solos pobres. Excesso de nutrientes causa crescimento "estiolado" (fraco e comprido) com menos resistência. Se solo for muito pobre pode aplicar composto orgânico leve 1-2 vezes por ano. Evite fertilizantes ricos em nitrogênio. Solo pobre mantém planta compacta, aromática e saudável. Em vasos pode usar fertilizante muito diluído ocasionalmente se planta mostrar sinais de deficiência.',
+    'Poda de FORMAÇÃO: Pode pontas quando jovem para estimular ramificação e formato compacto. Poda de MANUTENÇÃO: Após floração (verão) corte hastes florais e pode levemente para manter formato. Poda de RENOVAÇÃO: No final do inverno/início primavera pode cortar 1/3 da planta para renovar. Remova galhos secos, fracos ou danificados. Arruda responde bem a podas mantendo-se compacta. Use SEMPRE luvas ao podar - seiva causa fotossensibilidade. Evite podar em dias ensolarados se não estiver protegido.',
+    'Fácil',
+    13, -- Ruta graveolens
+    5   -- Carlos Ferreira (Especialista Plantas Medicinais)
+);
+
+-- ============================================
+-- OBSERVAÇÕES FINAIS
+-- ============================================
+
+-- DISTRIBUIÇÃO FINAL DAS PLANTAS POR USUÁRIO:
+-- 
+-- ID 3 - Pedro Oliveira (Entusiasta de Temperos): 
+--        ? Coentro, Cebolinha, Salsinha (3 plantas)
+--
+-- ID 4 - Ana Costa (Horta Urbana): 
+--        ? Alface, Couve, Tomate (3 plantas)
+--
+-- ID 5 - Carlos Ferreira (Especialista Plantas Medicinais): 
+--        ? Erva-Cidreira, Arruda (2 plantas)
+--
+-- ID 6 - Juliana Almeida (Iniciante): 
+--        ? Hortelã, Manjericão (2 plantas)
+--
+-- ID 7 - Roberto Mendes (Especialista Fruticultura): 
+--        ? Limão, Banana (2 plantas)
+--
+-- ID 10 - Beatriz Souza (Cultivo Orgânico): 
+--        ? Pimenta (1 planta)
+
+-- URLs das fotos: Links do Unsplash com imagens reais das plantas
+-- Todos os IDs de espécie e usuário estão corretamente mapeados
+-- Informações baseadas em pesquisas detalhadas de tutoriais especializados
+-- Textos escritos para iniciantes sem conhecimento prévio
+
+-- ============================================
+-- CONSULTAS ÚTEIS PARA VALIDAÇÃO
+-- ============================================
+
+-- Ver todas as plantas com seus usuários:
+/*
+SELECT 
+    p.nome as planta,
+    u.nome as usuario,
+    u.email,
+    p.dificuldade,
+    e.nome as especie
+FROM plantas p
+JOIN usuarios u ON p.id_usuario = u.id
+JOIN especies e ON p.id_especie = e.id
+ORDER BY u.nome, p.nome;
+*/
+
+-- Contar plantas por usuário:
+/*
+SELECT 
+    u.nome as usuario,
+    u.email,
+    COUNT(p.id) as total_plantas,
+    CASE 
+        WHEN u.admin = 1 THEN 'Administrador'
+        WHEN u.esp = 1 THEN 'Especialista'
+        ELSE 'Usuário Regular'
+    END as tipo
+FROM usuarios u
+LEFT JOIN plantas p ON u.id = p.id_usuario
+GROUP BY u.id
+ORDER BY total_plantas DESC;
+*/
+
+-- Plantas por nível de dificuldade:
+/*
+SELECT 
+    dificuldade,
+    COUNT(*) as quantidade,
+    GROUP_CONCAT(nome SEPARATOR ', ') as plantas
+FROM plantas
+GROUP BY dificuldade
+ORDER BY 
+    CASE dificuldade
+        WHEN 'Muito Fácil' THEN 1
+        WHEN 'Fácil' THEN 2
+        WHEN 'Média' THEN 3
+        WHEN 'Média a Difícil' THEN 4
+        WHEN 'Difícil' THEN 5
+    END;
+*/
+
+-- Plantas de especialistas:
+/*
+SELECT 
+    p.nome as planta,
+    u.nome as especialista,
+    e.nome as especie,
+    p.dificuldade
+FROM plantas p
+JOIN usuarios u ON p.id_usuario = u.id
+JOIN especies e ON p.id_especie = e.id
+WHERE u.esp = 1
+ORDER BY u.nome;
+*/
